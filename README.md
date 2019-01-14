@@ -5,4 +5,4 @@ contains the work of people with whom I have collaborated so far. Each folder, d
 perfomance metrics achieved.
 
 ## Humpback Whale Identification
-The scope of [this](https://www.kaggle.com/c/humpback-whale-identification) competition is to develop an algorithm that identifies individual whales in images.
+The scope of [this](https://www.kaggle.com/c/humpback-whale-identification) competition is to develop an algorithm that identifies individual whales in images. For this competition, I collaborated with [Ekhtiar Syed](https://github.com/ekhtiar).
