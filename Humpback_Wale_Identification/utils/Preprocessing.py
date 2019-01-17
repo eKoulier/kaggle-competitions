@@ -29,14 +29,12 @@ class ImagePreparation(object):
         """
 
         os.chdir(self.image_path)
-        pictures = os.listdir()
-        n_pictures = len(pictures)
+        figures = os.listdir()
+        n_figures = len(figures)
 
 
         # count the number of pictures been processed already
         counter = 0
 
         # Initialize np array
-        X = np.zeros((n_pictures, frame_size, frame_size, 3))
-
-
+        X = np.zeros((n_figures, frame_size, frame_size, 3))
