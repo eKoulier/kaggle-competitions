@@ -11,7 +11,7 @@ from keras.preprocessing import image
 from keras.applications.imagenet_utils import preprocess_input
 
 
-class ImagePreparation(object, df):
+class ImagePreparation(object):
     """
     This class preprocesses the images and outputs them as a np.matrix
     Parameters
@@ -23,19 +23,19 @@ class ImagePreparation(object, df):
         1   image2.jpg
     """
 
-    def __init__(self, image_path):
+    def __init__(self, image_path, df):
         self.df = df
         assert 'Image' in self.df.columns
 
     def convert_to_matrix(self, frame_size, print_remaining):
 
-        """Create directory if it does not exist.
+        """Loads all images from a file and converts them to np array.
         Parameters
         ----------
         frame_size : int
             The size of a single picture in pixels per row and per column
         print_remaining : bool
-            It prints every 500 steps how many images are to be preprocessed
+            It prints every 500 steps the number of images remaining to be processed.
 
         Returns
         -------
@@ -45,7 +45,6 @@ class ImagePreparation(object, df):
         y: np.array
             If the classes variable is true then this array corresponds to a vectorized
             class matrix.
-        mysterious hacker: you just got hacked again
         """
         assert (type(print_remaining) == bool)
 
